@@ -23,7 +23,7 @@ def solution(str_array):
     for str_cb in list_combinations_2[:]:
         if any(list(chain(str_cb)).count(letter) > 1 for letter in str_cb):
             list_combinations_2.remove(str_cb)      
-        return (0 if list_combinations_2 == [] else len(max(list_combinations_2)) )
+    return (0 if list_combinations_2 == [] else len(max(list_combinations_2)) )
 
 def main():
 
